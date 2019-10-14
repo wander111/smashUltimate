@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>empresa</title><link href='xydark/codeblock.dark.css' rel='stylesheet' type='text/css' />
+<link href='night/mermaid.dark.css' rel='stylesheet' type='text/css' />
+<link href='xydark/sourcemode.dark.css' rel='stylesheet' type='text/css' />
+<link href='xylight.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+.cm-s-inner .cm-variable { color: rgb(255, 255, 255); }
+.cm-s-inner .cm-keyword, .cm-s-inner .cm-property { color: rgb(102, 153, 204); }
+.cm-s-inner .cm-tag { color: rgb(236, 95, 103); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid rgb(184, 191, 198); z-index: 3; }
+.cm-s-inner .cm-string { color: rgb(153, 199, 148); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(101, 115, 126); }
+.cm-s-inner .cm-header, .cm-s-inner .cm-def, .cm-s-inner.cm-header, .cm-s-inner.cm-def, .cm-s-inner .cm-attribute, .cm-s-inner .cm-operator { color: rgb(197, 148, 197); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(153, 199, 148); }
+.cm-s-inner .cm-hr { color: rgb(216, 213, 213); }
+.cm-s-inner .cm-link { color: rgb(211, 211, 239); }
+.cm-s-inner .cm-negative { color: rgb(236, 95, 103); }
+.cm-s-inner .cm-positive { color: rgb(153, 199, 148); }
+.cm-s-inner .cm-string-2 { color: rgb(236, 95, 103); }
+.cm-s-inner .cm-meta, .cm-s-inner .cm-qualifier { color: rgb(183, 179, 179); }
+.cm-s-inner .cm-builtin { color: rgb(243, 179, 248); }
+.cm-s-inner .cm-bracket { color: rgb(95, 179, 179); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(132, 182, 203); }
+.cm-s-inner .cm-number { color: rgb(249, 145, 87); }
+.cm-s-inner .cm-variable { color: rgb(184, 191, 198); }
+.cm-s-inner .cm-variable-2 { color: rgb(159, 186, 213); }
+.cm-s-inner .cm-variable-3 { color: rgb(28, 198, 133); }
+.CodeMirror-selectedtext, .CodeMirror-selected { background: rgb(74, 137, 220); text-shadow: none; color: rgb(255, 255, 255) !important; }
+.CodeMirror-gutters { border-right: none; }
+
+
+:root { --accent-color: #aeb1b5; --dark-accent-color: #787a7c; --background-color: white; --border-color: #ddd; --code-bg-color: #f8f8f8; --font-color: #42464c; --header-color: #222324; --link-color: #2077b2; --control-text-color: #667176; --side-bar-bg-color: #fafafa; --body-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace; --header-font: "Fira Sans", "Roboto", "Source Sans Pro", sans-serif; --border-radius: 2px; --document-horizontal-margin: 80px; --document-padding-x: 10ch; --font-size: 16px; --h1-fontsize: 2rem; --h2-fontsize: 1.375rem; --h3-fontsize: 1.25rem; --h4-fontsize: 1.125rem; --line-height: 1.4; --main-content-margin: 0 auto; --main-content-max-width: 100ch; --monospace-font-size: 15px; --monospace-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace; --monospace-line-height: 1.4; --monospace: var(--monospace-font); --nav-width: 200px; --vertical-padding: 40px; }
+@media (max-width: 640px) {
+  :root { --document-padding-x: 4ch; }
+}
+html { font-size: var(--font-size); background-color: var(--background-color); }
+html, body { color: var(--font-color); font-family: var(--body-font); line-height: var(--line-height); }
+#write { padding-left: var(--document-padding-x); padding-right: var(--document-padding-x); max-width: var(--main-content-max-width); box-sizing: border-box; }
+pre.md-meta-block { background-color: var(--background-color); padding-bottom: 0.5rem; color: var(--accent-color); border-bottom: 2px solid var(--border-color); font-family: var(--monospace-font); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--header-font); font-weight: bold; color: var(--header-color); }
+h1 { margin-top: 3rem; margin-bottom: 1.5rem; font-size: var(--h1-fontsize); }
+h1:not(:first-child) { margin-top: 3rem; }
+h2 { margin-top: 1.5rem; margin-bottom: 1.5rem; font-size: var(--h2-fontsize); }
+h3 { margin-top: 1.5rem; margin-bottom: 1rem; font-size: var(--h3-fontsize); }
+h4, h5, h6 { color: var(--header-color); margin-top: 1rem; margin-bottom: 0rem; font-size: 1rem; }
+h4 { font-size: var(--h4-fontsize); }
+h6 { color: var(--control-text-color); }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+table { margin-top: 1rem; margin-bottom: 1rem; }
+table tr:nth-child(2n), thead { background-color: var(--side-bar-bg-color); }
+td, th { border-style: solid; border-color: var(--border-color); border-width: 1px; padding: 0.35rem 0.7rem; }
+li p { margin: 0px; }
+.task-list { padding-left: 0px; }
+.task-list-item { padding-left: 1.5em; margin-bottom: 0rem; }
+#write input[type="checkbox"] { margin-top: 5px; }
+blockquote { margin: 1rem 0px 1rem 0.5ch; padding-left: 2ch; position: relative; overflow: hidden; border-left: 2px solid var(--border-color); color: var(--accent-color); }
+hr { border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid var(--border-color); margin-top: 1.4rem; margin-bottom: 1.4rem; }
+p { margin: 1rem 0px; }
+.cm-s-inner .CodeMirror-gutters { background: var(--code-bg-color); }
+.code-tooltip { box-shadow: none; border-radius: var(--border-radius); background-color: var(--code-bg-color); border-color: var(--border-color); border-style: solid; border-width: 1px; }
+.code-tooltip input { outline: none; width: 20ch; }
+.md-fences .code-tooltip { bottom: -1.8rem; }
+.md-fences.md-focus .cm-s-inner { border-bottom-right-radius: 0px; }
+.autoComplt-hint { background-color: transparent !important; margin: 0px !important; padding: 0.125rem 0.375rem !important; color: var(--text-color)  !important; line-height: var(--line-height)  !important; height: 1.4rem !important; }
+.autoComplt-hint-selected { background-color: var(--link-color)  !important; color: var(--background-color)  !important; }
+.md-fences, code, tt { border: 1px solid var(--border-color); background-color: var(--code-bg-color); font-family: var(--monospace-font); font-size: var(--monospace-font-size); border-radius: 0.25rem; padding: 0px 0.125rem; line-height: var(--monospace-line-height); }
+.md-fences { margin-bottom: 18px; margin-top: 15px; padding: 8px 1em 6px; }
+a { color: var(--link-color); text-decoration: none; }
+.outline-item:hover { color: var(--header-color); }
+#write div.md-toc-tooltip { background-color: var(--background-color); }
+
+
+:root { --accented-background-color: #464B5D; --light-header-color: #a5a7bd; --select-text-bg-color: #295080; --accent-color: rgb(120, 124, 136); --dark-accent-color: #464B5D; --background-color: #101010; --font-color: #8F93A2; --header-color: #EEFFFF; --border-color: #232629; --link-color: #6699CC; --code-bg-color: #0C1420; --hover-bg-color: #050505; --control-text-color: var(--font-color); --side-bar-bg-color: var(--background-color); --control-text-hover-color: var(--header-color); --item-hover-text-color: var(--header-color); --item-hover-bg-color: var(--hover-bg-color); --bg-color: var(--background-color); --text-color: var(--font-color); --meta-content-color: var(--accent-color); --md-char-color: var(--accent-color); --window-border: 0px solid rgba(0,0,0,0); --active-file-bg-color: var(--hover-bg-color); --rawblock-edit-panel-bd: var(--code-background-color); }
+.outline-item:hover { background-color: var(--hover-bg-color); }
+h1, h2, h3, h4, h5, h6 { color: var(--light-header-color); }
+mark { background: rgb(184, 184, 10); }
+table tr:nth-child(2n), thead { background-color: rgb(20, 19, 19); }
+sup.md-footnote { background-color: var(--code-bg-color); color: var(--font-color); }
+.md-before, .md-after { color: var(--dark-accent-color); }
+table tr:nth-child(2n), thead { background-color: rgb(24, 28, 45); }
+.md-url { color: rgb(197, 148, 197); }
+footer.ty-footer { border-top: none; }
+.typora-sourceview-on #toggle-sourceview-btn { background-color: var(--background-color); }
+.cm-s-typora-default .CodeMirror-activeline-background { background-color: rgb(24, 28, 45); }
+code, .md-fences { background: rgb(15, 17, 26); padding: 0.1em; font-size: 0.9em; margin-left: 0.2em; margin-right: 0.2em; }
+.md-image > .md-meta { color: var(--accent-color); }
+.context-menu { background-color: rgb(20, 19, 19); }
+.context-menu.dropdown-menu .divider { background-color: rgb(35, 38, 41); }
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * { color: rgb(79, 82, 90) !important; }
+.on-focus-mode .md-end-block:not(.md-focus) img, .on-focus-mode .md-task-list-item:not(.md-focus-container) > input { }
+.on-focus-mode li[cid]:not(.md-focus-container) { color: rgb(79, 82, 90); }
+.on-focus-mode .md-fences.md-focus .CodeMirror-code > :not(.CodeMirror-activeline) *, .on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * { color: rgb(79, 82, 90) !important; }
+.on-focus-mode .md-focus, .on-focus-mode .md-focus-container { color: var(--light-header-color); }
+.on-focus-mode #typora-source .CodeMirror-code > :not(.CodeMirror-activeline) * { color: rgb(79, 82, 90) !important; }
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-node'><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" href="#introducción">Introducción</a></span><span class="md-toc-item md-toc-h1" data-ref="n5"><a class="md-toc-inner" href="#concepto-de-administración-aplicado-a-la-empresa">Concepto de administración aplicado a la empresa</a></span><span class="md-toc-item md-toc-h1" data-ref="n7"><a class="md-toc-inner" href="#¿qué-es-una-empresa">¿Qué es una Empresa?</a></span><span class="md-toc-item md-toc-h1" data-ref="n9"><a class="md-toc-inner" href="#elementos-de-una-empresa">Elementos de una empresa</a></span><span class="md-toc-item md-toc-h1" data-ref="n37"><a class="md-toc-inner" href="#estructura-de-una-empresa">Estructura de una empresa</a></span><span class="md-toc-item md-toc-h2" data-ref="n38"><a class="md-toc-inner" href="#la-dirección-de-la-empresa">La dirección de la empresa</a></span><span class="md-toc-item md-toc-h2" data-ref="n46"><a class="md-toc-inner" href="#la-división-de-la-empresa">La división de la empresa</a></span><span class="md-toc-item md-toc-h3" data-ref="n72"><a class="md-toc-inner" href="#división-funcional">División funcional</a></span><span class="md-toc-item md-toc-h3" data-ref="n77"><a class="md-toc-inner" href="#división-por-productos">División por productos</a></span><span class="md-toc-item md-toc-h3" data-ref="n82"><a class="md-toc-inner" href="#división-por-mercados">División por mercados</a></span><span class="md-toc-item md-toc-h3" data-ref="n85"><a class="md-toc-inner" href="#división-mixta">División mixta</a></span><span class="md-toc-item md-toc-h3" data-ref="n90"><a class="md-toc-inner" href="#las-unidades-estratégicas-de-negocio-uen">Las Unidades Estratégicas de Negocio (UEN)</a></span><span class="md-toc-item md-toc-h3" data-ref="n93"><a class="md-toc-inner" href="#el-departamento-de-marketing">El departamento de marketing</a></span><span class="md-toc-item md-toc-h1" data-ref="n100"><a class="md-toc-inner" href="#aspectos-jurídicos-de-una-empresa">Aspectos Jurídicos de una Empresa.</a></span><span class="md-toc-item md-toc-h1" data-ref="n120"><a class="md-toc-inner" href="#tipos-de-empresa">Tipos de Empresa</a></span><span class="md-toc-item md-toc-h1" data-ref="n143"><a class="md-toc-inner" href="#conclusión">Conclusión </a></span><span class="md-toc-item md-toc-h1" data-ref="n145"><a class="md-toc-inner" href="#linkografía">Linkografía</a></span></p></div><h1><a name="introducción" class="md-header-anchor"></a><span>Introducción</span></h1><p><span>Una empresa, en esencia, consiste de un sistema social en el que se integra un grupo de individuos y medios con los que conseguir unas ciertas metas y objetivos. El logro eficaz de estas metas/objetivos necesita de una organización que haga posible la coordinación coherente de todos los medios y personas que forman parte de la misma. Al igual que el concepto de empresa ha ido evolucionando a medida que la realidad empresarial se iba modificando, los sistemas de organización empresarial han sufrido notables cambios, provocados por la evolución técnica que se ha producido en los últimos años.  </span></p><p><span>La empresa es un lugar en el que se desarrolla una parte importante de la vida de las personas que aportan su trabajo a la misma. La integración de un trabajador en una empresa no se termina al conseguir el puesto de trabajo. Es precisamente a partir de este momento cuando se le exige al trabajador un esfuerzo en este sentido. Esta integración se ve favorecida si el trabajador conoce cuanto antes la organización de la que se ha dotado la empresa y asume su puesto con el conjunto de posibilidades y deberes que se le asignan; asume su responsabilidad en cuanto a sus subordinados, así como las relaciones con sus superiores, descubre la cultura de la empresa y se adapta a ella. Es precisamente este último elemento, la cultura empresarial, el que determinará en gran medida el reparto del poder, el sistema de toma de decisiones y los sistemas de información presentes en la empresa, que serán la clave de su funcionamiento. El presente informe trata de extender estas ideas y desglosar todos estos conceptos que engloban el entendimiento actual de como funcionan las empresas.</span></p><h1><a name="concepto-de-administración-aplicado-a-la-empresa" class="md-header-anchor"></a><span>Concepto de administración aplicado a la empresa</span></h1><p><span>Es algo ligado a la empresa y a la vez imprescindible en el funcionamiento de una en tiempos actuales en donde el mercado; lleva a las empresas a un competencia aun mayor, toda empresa busca a través de servicios o productos ponerlos a disposición de empresas o personas naturales para satisfacer un requerimiento del mercado, La Administración es una ciencia que busca poder utilizar los recursos de la empresa de una mejor forma para lo que se desea específicamente. De manera que una correcta administración es cada vez más necesaria porque a través de esta la empresa tendrá las herramientas que permitirá logar sus objetivos en un menor tiempo, tener un margen de ganancia mayor y además un desgaste de maquinaria; personal; infraestructura y recursos que tiene disponibles de una menor forma, permitiendo lograr todo esto en un menor tiempo para que la empresa logre  sus objetivos y alcance un mayor crecimiento por el margen aun mayor de ganancia que logra, así también permitiendo su expansión a otras locaciones estratégicas a además de poder posicionarse ya sea nacional o internacionalmente de una mejor manera para sus clientes y los nuevos que confiaran en ella.</span></p><h1><a name="¿qué-es-una-empresa" class="md-header-anchor"></a><span>¿Qué es una Empresa?</span></h1><p><span>La empresa en primer lugar es una unidad con el fin de producir que esta agrupada, ósea puede tener varios socios o filiales pero es una en su totalidad que busca atreves de su actividad poner a disposición productos servicios con el fin de lucra a través de estas actividades y así satisfacer un requerimiento del mercado en torno a lo que se disponen a hacer en donde se desenvuelve en ese momento, con objetivos claros y una misión definida hacer uso de sus facultades para crecer, lograrlos y poder expandirse a nuevos mercados.</span></p><h1><a name="elementos-de-una-empresa" class="md-header-anchor"></a><span>Elementos de una empresa</span></h1><p><span>Una empresa está compuesta de un gran número de elementos, todos</span>
+<span>ellos necesarios para realizar su actividad. Los podemos clasificar en</span>
+<span>tres grandes grupos:</span></p><ol start='' ><li><p><strong><span>Elementos humanos</span></strong></p><ul><li><p><strong><span>Trabajadores</span></strong><span> </span></p><p><span>Constituyen la mano de obra imprescindible para</span>
+<span>que la empresa realice su actividad.</span></p></li><li><p><strong><span>Empresario</span></strong><span> </span></p><p><span>Desarrolla una función fundamental, pues coordina y</span>
+<span>organiza toda la actividad productiva. Sin su concurso, la empresa</span>
+<span>sería una mera acumulación de elementos sin un propósito definido. Además, es quien asume el riesgo de la actividad empresarial.</span></p></li></ul></li><li><p><strong><span>Elementos materiales</span></strong></p><ul><li><p><strong><span>Recursos naturales</span></strong></p><p><span>Constituyen las materias primas y cualquier</span>
+<span>otro recurso obtenido directamente de la naturaleza.</span></p><p><span>Por ejemplo la madera utilizada para fabricar tablones o las</span>
+<span>tierras donde se siembra</span>
+<span>cereal.</span></p></li><li><p><strong><span>Capital físico</span></strong></p><p><span>A diferencia</span>
+<span>de los recursos naturales, el</span>
+<span>capital se ha obtenido mediante la acción de las personas.</span></p><p><span>Por ejemplo las máquinas y herramientas utilizadas en una fábrica, los ordenadores de un</span>
+<span>banco o las furgonetas de</span>
+<span>una empresa de reparto.</span></p></li></ul></li><li><p><strong><span>Elementos inmateriales</span></strong></p><p><span>Este grupo comprende aspectos difíciles</span>
+<span>de valorar pero en muchos casos importantísimos para la empresa.</span></p><p><span>Por ejemplo las marcas, la imagen y el prestigio de la empresa, la estructura organizativa adoptada o la experiencia acumulada, comúnmente denominada «saber hacer» (en inglés, know how).</span></p></li></ol><p><span>Las empresas combinan todos los elementos que acabamos de citar</span>
+<span>en el denominado proceso productivo.</span></p><h1><a name="estructura-de-una-empresa" class="md-header-anchor"></a><span>Estructura de una empresa</span></h1><h2><a name="la-dirección-de-la-empresa" class="md-header-anchor"></a><span>La dirección de la empresa</span></h2><p><span>Si examinamos las distintas tareas que se realizan</span>
+<span>en una empresa y las diferenciamos según la responsabilidad que conllevan, se verá que están</span>
+<span>estructuradas en tres grados o niveles: el </span><strong><span>directivo,</span></strong>
+<strong><span>el ejecutivo y el operativo.</span></strong></p><p><strong><span>Dirigir</span></strong><span> supone tomar decisiones para lograr unos</span>
+<span>fines determinados. Toda empresa puede dirigirse</span>
+<span>de forma centralizada o descentralizada. Se considera que una dirección es centralizada cuando es</span>
+<span>la máxima jerarquía quien adopta todas las decisiones; esto es habitual en empresas pequeñas.</span>
+<span>Por su parte, la dirección descentralizada se caracteriza por la delegación de autoridad y responsabilidad a las diferentes unidades en las que se</span>
+<span>estructura la organización, con el fin de alcanzar</span>
+<span>mejor sus objetivos. En la dirección descentralizada no todas las decisiones se adoptan en el nivel</span>
+<span>directivo, sino que también se toman decisiones en</span>
+<span>el nivel ejecutivo, e incluso en el operativo, aunque en cada uno de ellos estas decisiones son de</span>
+<span>distinto orden.</span></p><p><span>En el </span><strong><span>nivel directivo</span></strong><span> se adoptan decisiones que</span>
+<span>afectan a toda la empresa y tienen trascendencia a</span>
+<span>largo plazo. Medidas como determinar los productos que se elaboran, las fábricas que se construyen</span>
+<span>o los acuerdos estratégicos nacionales o internacionales son algunas de ellas. En este nivel, se</span>
+<span>encuentran los directores de las diversas áreas funcionales de la empresa; esto es: director general,</span>
+<span>director de marketing, director de producción y,</span>
+<span>por último, director de financiación.</span></p><p><span>En el </span><strong><span>nivel ejecutivo o intermedio</span></strong><span> se integran los</span>
+<span>distintos jefes o mandos intermedios. En él se</span>
+<span>toman decisiones de tipo técnico, relativas al cumplimiento de los planes y programas diseñados para</span>
+<span>alcanzar los fines generales. Así, el jefe de ventas</span>
+<span>seleccionará a los vendedores, determinará su tarea, establecerá los sistemas de remuneración y</span>
+<span>formación, supervisará la coordinación con la dirección de marketing, etcétera.</span></p><p><span>Por último, en el </span><strong><span>nivel operativo</span></strong><span> también se abordan cuestiones (normalmente más sencillas) relacionadas con el desarrollo de sus tareas específicas. Por ejemplo, un vendedor se ocupará de visitar</span>
+<span>a los clientes actuales y potenciales, de recibir los</span>
+<span>pedidos, de gestionar los cobros, del seguimiento</span>
+<span>de los impagados, etcétera.</span></p><p><img src="https://imgur.com/5oiiKHc.png" referrerpolicy="no-referrer" alt="1556155916047"></p><p>&nbsp;</p><h2><a name="la-división-de-la-empresa" class="md-header-anchor"></a><span>La división de la empresa</span></h2><p><span>El creciente número de tareas que se llevan a cabo</span>
+<span>en una empresa y la complejidad que pueden llegar</span>
+<span>a alcanzar hacen necesaria la división del trabajo.</span></p><p><span>De este modo, la distribución de la actividad de</span>
+<span>la empresa en las diversas tareas individuales y la</span>
+<span>agrupación de éstas en bloques más o menos</span>
+<span>homogéneos conformarán una serie de unidades</span>
+<span>que se denominan departamentos, divisiones o</span>
+<span>áreas funcionales. Estas unidades pueden estructurarse según varios criterios:</span></p><ul><li><p><span>Organizaciones jerárquicas:</span></p><ul><li><span>Funcionales.</span></li><li><span>Por productos.</span></li><li><span>Por mercados.</span></li><li><span>Mixto.</span></li></ul></li><li><p><span>Organizaciones no jerárquicas</span></p></li></ul><p><span>Estos mismos criterios servirán, además, para</span>
+<span>organizar los departamentos. Las organizaciones</span>
+<span>jerárquicas están centralizadas y se estructuran</span>
+<span>por niveles, mientras que las no jerárquicas tienen una estructura descentralizada y flexible; utilizan para su funcionamiento las técnicas más</span>
+<span>modernas en comunicación y tratamiento de la</span>
+<span>información.</span></p><p><span>Las organizaciones flexibles y con pocos niveles</span>
+<span>jerárquicos parecen estar mejor preparadas para</span>
+<span>un mundo tan cambiante como el actual. En este</span>
+<span>punto, hay que tener en cuenta factores psicológicos, ya que cuanto más fácil sea modificar una</span>
+<span>organización, más estable será después su permanencia. En estos casos, se habla de organizaciones dinámicamente estables, las cuales tienen</span>
+<span>vocación de permanencia y están orientadas al</span>
+<span>futuro.</span></p><p><span>Las diferentes formas de organización únicamente</span>
+<span>serán indicativas para las empresas, ya que es la</span>
+<span>propia organización la que establece el modelo y</span>
+<span>no la que se adapta a él. Por esto, aunque las personas son siempre más importantes que la organización, la mejor opción es disponer tanto de buenos</span>
+<span>profesionales como de una organización eficaz.</span></p><p><span>La representación gráfica de una organización se</span>
+<span>denomina </span><strong><span>organigrama</span></strong><span>. Este organigrama refleja</span>
+<span>de un modo parcial la organización, ya que no incluye normas de funcionamiento, métodos de trabajo, descripciones de puestos, etc. El organigrama</span>
+<span>puede ser vertical, horizontal o circular.</span></p><p><span>Los </span><strong><span>organigramas verticales</span></strong><span> tienen forma piramidal, representándose los niveles jerárquicos de arriba</span>
+<span>abajo. Por influencia del marketing, hay autores que</span>
+<span>proponen que este organigrama debería tener forma</span>
+<span>de pirámide invertida, ya que si todo en la empresa</span>
+<span>está dispuesto pensando en el cliente, también la</span>
+<span>estructura de la organización debería anteponer a</span>
+<span>las personas que se relacionan directamente con</span>
+<span>este cliente, dedicándose los demás niveles básicamente a asistir a ese primer nivel con el que el</span>
+<span>cliente tiene contacto. De acuerdo con esto, el director general se situaría en el último puesto del</span>
+<span>orden jerárquico, en lugar de en el primero que ostenta habitualmente.</span></p><p><img src="https://imgur.com/H1hFiQ0.png" referrerpolicy="no-referrer" alt="1556156587586"></p><p><span>En un </span><strong><span>organigrama horizontal</span></strong><span> la representación</span>
+<span>se hace de izquierda a derecha, mientras que en los</span>
+<strong><span>organigramas circulares</span></strong><span> se realiza mediante círculos concéntricos que simbolizan cada uno de los</span>
+<span>distintos niveles.</span></p><p><img src="https://imgur.com/GM4TwLG.png" referrerpolicy="no-referrer" alt="1556159512223"></p><p>&nbsp;</p><h3><a name="división-funcional" class="md-header-anchor"></a><span>División funcional</span></h3><p><span>La división funcional sucede cuando se establece</span>
+<span>una estructura basada en la especialización por</span>
+<span>conjuntos de tareas relacionadas entre sí o por distintos procesos dentro de cada nivel. Esta división</span>
+<span>se realizará según las diferentes áreas funcionales.</span></p><p><img src="https://imgur.com/WJMVM7J.png" referrerpolicy="no-referrer" alt="1556156863104"></p><p><span>Esta forma de estructuración funcional es la más</span>
+<span>sencilla y se adopta normalmente en los niveles</span>
+<span>más altos de la organización, ya que es la que</span>
+<span>permite un mayor control. La división funcional es</span>
+<span>muy frecuente en las Pymes, debido a que en</span>
+<span>algunas grandes organizaciones puede plantear</span>
+<span>problemas de competencias entre las diversas</span>
+<span>divisiones.</span></p><p><span>La estructura concreta dependerá del tamaño de la</span>
+<span>organización. Así, las empresas pequeñas tienden</span>
+<span>a contratar fuera algunas de las funciones anteriormente indicadas (outsourcing). Es lógico que en</span>
+<span>una empresa pequeña cada persona suela tener</span>
+<span>más funciones que en una grande, en la que un</span>
+<span>determinado número de empleados realizan simultáneamente la misma tarea.</span></p><h3><a name="división-por-productos" class="md-header-anchor"></a><span>División por productos</span></h3><p><span>Si las divisiones se hacen de acuerdo con las particularidades de fabricación y comercialización de</span>
+<span>los productos, los sectores industriales o los proyectos, se está llevando a cabo una división por</span>
+<span>productos.</span></p><p><span>La división por productos es más propia de empresas grandes o con una gama amplia de productos. Se puede citar como ejemplo el grupo Nestlé,</span>
+<span>que tiene una dirección general de alimentación y</span>
+<span>otra de productos farmacéuticos y cosméticos,</span>
+<span>ambas divisiones con un solo presidente. Esta</span>
+<span>estructura es más costosa que la funcional, y también más compleja. De hecho, cada jefe de producto (product manager) y/o de marca (brand</span>
+<span>manager) funciona de forma independiente.</span></p><p><span>En empresas con un reducido número de productos o con pocas líneas de producción, homogéneas y bien diferenciadas, se puede optar por esta</span>
+<span>separación. Es éste el caso de la empresa Michelín, que vende artículos tan diferentes entre sí</span>
+<span>como los neumáticos y las guías turísticas.</span></p><p><span>También puede hacerse esta separación en el</span>
+<span>caso de los productos que requieran un alto grado</span>
+<span>de especialización en su tratamiento, como, por</span>
+<span>ejemplo, una compañía de seguros que divida</span>
+<span>básicamente sus actividades entre seguros de vida y seguros de no vida.</span></p><h3><a name="división-por-mercados" class="md-header-anchor"></a><span>División por mercados</span></h3><p><span>Cuando el criterio de especialización que prevalece</span>
+<span>depende de los diferentes tipos de mercado en los</span>
+<span>que la empresa actúa, se trata de una división por</span>
+<span>mercados. La tipología puede ser amplia y surge de</span>
+<span>la necesidad de segmentación del mercado. Esta</span>
+<span>división puede hacerse según distintos criterios:</span>
+<span>tipos de clientes (consumo y organizacional);</span>
+<span>canales de distribución (mayoristas, minoristas y</span>
+<span>grandes superficies), o zonas geográficas (países,</span>
+<span>regiones, etc.), siendo esta última forma la más</span>
+<span>frecuente.</span></p><p><span>La división por mercados se da también en grandes</span>
+<span>empresas y es, además, más compleja que la funcional. Se pueden hacer divisiones por clientes en</span>
+<span>empresas de servicios, como empresas informáticas o entidades bancarias; por zonas geográficas,</span>
+<span>en empresas de bebidas o de electrodomésticos;</span>
+<span>por canales de distribución, en empresas de alimentación, etc. En todo caso, se elegirá el modelo</span>
+<span>que mejor se adapte a las características de la</span>
+<span>empresa, el mercado o el producto.</span></p><h3><a name="división-mixta" class="md-header-anchor"></a><span>División mixta</span></h3><p><span>Al estructurar los distintos departamentos mediante algunos de los criterios anteriormente citados, y aplicándolos a la vez (funcionalmente, por</span>
+<span>productos y por mercados), se está fijando una</span>
+<span>división mixta. Determinadas situaciones pueden</span>
+<span>requerir este tipo de planteamiento. Un ejemplo</span>
+<span>sería la llamada estructura matricial, cuya denominación se debe a la forma de matriz (filas y</span>
+<span>columnas) que toma en esa ocasión el organigrama como el equema que se puede ver abajo. En este caso, el jefe de</span>
+<span>producto A de la zona norte tiene que responder</span>
+<span>ante dos líneas de responsabilidad: el jefe del producto A y el director de la zona norte.</span></p><p><span>La estructura mixta aparece cuando confluyen productos y mercados muy diferentes entre sí, que han</span>
+<span>de gestionarse por separado. Aquí las posibles</span>
+<span>combinaciones se multiplican y el control se hace</span>
+<span>más complicado.</span></p><p><img src="https://imgur.com/Q1kpFym.png" referrerpolicy="no-referrer" alt="1556157358970"></p><p>&nbsp;</p><h3><a name="las-unidades-estratégicas-de-negocio-uen" class="md-header-anchor"></a><span>Las Unidades Estratégicas de Negocio (UEN)</span></h3><p><span>Sin contradecir lo señalado hasta este momento,</span>
+<span>es posible establecer en el nivel más alto de la</span>
+<span>empresa unas unidades que se gestionarán de</span>
+<span>forma individualizada, con su propia estrategia y medios, como si se tratase de negocios distintos,</span>
+<span>llamadas Unidades Estratégicas de Negocio (UEN).</span></p><p><span>Estas unidades se plantean en empresas que se</span>
+<span>dirigen a diferentes clientes, y satisfacen diversas</span>
+<span>necesidades y/o utilizan tecnologías que no tienen</span>
+<span>nada en común.</span></p><h3><a name="el-departamento-de-marketing" class="md-header-anchor"></a><span>El departamento de marketing</span></h3><p><span>El departamento de marketing aparecerá en la</span>
+<span>estructura organizativa cuando en los primeros</span>
+<span>niveles de la empresa se haya hecho una división</span>
+<span>funcional. Para organizar el departamento de marketing habrá que tener en cuenta, además de las</span>
+<span>consideraciones de carácter general que se han</span>
+<span>expuesto anteriormente, otras específicas que</span>
+<span>dependen de las circunstancias concretas de la</span>
+<span>empresa en cuestión.</span></p><p><span>Cuando se habla de comercio se piensa tanto en</span>
+<span>compras como en ventas. En la organización de la</span>
+<span>empresa, el término «comercial» se refiere exclusivamente a las ventas. Las compras suelen estar</span>
+<span>relacionadas con el departamento de producción,</span>
+<span>o de aprovisionamiento, en su caso, y el marketing</span>
+<span>es la evolución de la actividad comercial en las</span>
+<span>empresas. Posiblemente sea ésta la razón de que</span>
+<span>exista cierta confusión entre la propia actividad</span>
+<span>comercial y el marketing. Es conveniente aclarar</span>
+<span>que este departamento de marketing puede incluir</span>
+<span>o no la función de ventas.</span></p><p><span>En el organigrama funcional del departamento de</span>
+<span>marketing como el equema de abajo, se ha incluido la actividad de ventas por ser ésta la alternativa más</span>
+<span>normal. También es habitual que se consideren</span>
+<span>áreas o departamentos distintos, en cuyo caso ha</span>
+<span>de existir un alto grado de coordinación entre ellos</span>
+<span>para evitar conflictos.</span></p><p><span>Cuando sólo existe un departamento o división</span>
+<span>comercial y su única función es la venta, la mentalidad de marketing es prácticamente inexistente.</span>
+<span>Ahora bien, si esa división comercial incluye las</span>
+<span>funciones de marketing, sólo se diferenciará de la</span>
+<span>división de marketing en la denominación.</span></p><p><img src="https://imgur.com/0wVy1gm.png" referrerpolicy="no-referrer" alt="1556157921745"></p><p>&nbsp;</p><h1><a name="aspectos-jurídicos-de-una-empresa" class="md-header-anchor"></a><span>Aspectos Jurídicos de una Empresa.</span></h1><p><span>Como primer punto, se comienza con una escritura de constitución de sociedad, la que indicará el tipo de sociedad que se conformará, actividad comercial que realizará, los socios que serán parte, el aporte de capital de cada uno de los socios, forma de participación en las utilidades obtenidas y como será respondido en el caso de quiebre o pérdida. Además de ser un respaldo jurídico ante cualquier eventualidad sobre los bienes de las partes involucradas ya que se debe estipular los límites y alcances de las responsabilidades comerciales.</span></p><p><span>Luego de escrita la constitución de sociedad, se requiere la legalización de esta por parte un notario, para así, establecer la persona jurídica o representante legal de la empresa en formación.</span></p><p><span>Posterior a la legalización ante notaria, se procede a la inscripción de la sociedad en el registro de comercio, el cual otorga la personalidad jurídica y calidad de sujetos de derecho a las sociedades conformadas. Esta inscripción se realiza a través del Conservador de Bienes Raíces.  </span></p><p><span>La inscripción una constitución puede demorar entre 3 a 7 días hábiles, Luego de esto se debe concurrir nuevamente a las oficinas del Conservador de Bienes Raíces a retirar la protocolización de la Sociedad. (Lo que consiste en llevar a la notaría todos los documentos hasta ahora obtenidos para que se genere un archivo que dé cuenta de los trámites realizados hasta el momento).</span></p><p><span>Una vez inscrita la sociedad en el conservador de bienes raíces, se debe realizar la publicación en el diario oficial, la cual debe ser realizada dentro de los 60 próximos días, a partir de la fecha registrada en la escritura de la sociedad.  </span></p><p><span>Realizados esos pasos, se continúa con la iniciación de actividades y obtención del R.U.T(Rol único tributario). Cualquier persona natural o jurídica sujeta a impuestos debe solicitar la inscripción del rol único tributario y comenzar una iniciación de actividades en el SII (Servicio de Impuestos Internos). Esto marca el inicio de las obligaciones como contribuyente sujeto a impuestos, los que se aplicarán mientras dure la actividad comercial.</span></p><p><span>La declaración de iniciación de actividades es una declaración jurada formalizada ante el Servicio de Impuestos Internos sobre el comienzo de cualquier tipo de negocios o labores susceptibles de producir rentas gravadas en la primera o segunda categoría de la Ley de la Renta.</span></p><ol start='' ><li><strong><span>Primera Categoría:</span></strong><span> Todas aquellas actividades que obtienen su renta del capital y/o de actividades comerciales, industriales, mineras, de transporte, etc.</span></li><li><strong><span>Segunda Categoría:</span></strong><span> Actividades que obtienen su ingreso de las rentas del trabajo, como las Sociedades y/o Servicios Profesionales.</span></li></ol><p><span>Constituida la empresa como tal e iniciada las actividades de la misma, se comienza la llamada obligación tributaria, la que sujeta a la empresa a trabajar con ciertos documentos, entre los que encontramos las Boletas de Honorarios, Facturas, Boletas de Venta, Libros Contables, entre otros.</span></p><p><span>Además de todo lo mencionado anteriormente, se necesitan permisos, otorgados por distintas entidades de acuerdo al rubro de la empresa. Esta etapa de Creación de una empresa contempla aspectos tan importantes como el lugar físico donde se encontrará la empresa y el cumplimiento de las condiciones estructurales, sanitarias y ambientales necesarias para ejercer. Estos requisitos se encuentran regulados por ley y son necesarios para obtener la Patente Comercial, los cuales dependerán del Giro de la empresa.</span></p><p><span>Para ahorrar la mayor parte del trámite existe el registro de empresas y sociedades o empresa en un día, Esta es una iniciativa del gobierno que permitirá iniciar una empresa en un día, en sólo un trámite y a costo cero. Se basa en un sistema totalmente electrónico.  </span></p><p><span>La ley considera un portal radicado en el Ministerio de Economía, que a su vez estará conectado con el SII para obtener un RUT, iniciar actividades, solicitar factura electrónica y así constituir una empresa.  </span></p><p><span>Actualmente se pueden constituir Empresa Individual de Responsabilidad Limitada, Sociedad de Responsabilidad Limitada y Sociedades por Acciones, a través de este registro electrónico.</span></p><p>&nbsp;</p><h1><a name="tipos-de-empresa" class="md-header-anchor"></a><span>Tipos de Empresa</span></h1><p><span>En Chile existen 6 tipos de sociedades comerciales.</span></p><ol start='' ><li><strong><span>Sociedad Anónima:</span></strong><span> Es una sociedad de aporte en la que puede participar un numero inexacto de personas, contribuyendo a la empresa en sí, estás son regidas por un directorio, estas pueden ser abiertas o cerradas.</span></li><li><strong><span>Sociedad por Acciones:</span></strong><span> Son empresas con riesgo de capital, en la que se invierte y se maneja mediante acciones.</span></li><li><strong><span>Sociedad de Responsabilidad Limitada:</span></strong><span> Son empresas creadas con el fin de proteger el patrimonio individual de cada participante en caso que esta se vaya a la quiebra, lo que implica que, si en caso de quiebra, solo se pierde lo invertido en esta.</span></li><li><strong><span>Empresas Individuales de Responsabilidad Limitada:</span></strong><span> Es una empresa conformada por solo una persona, con responsabilidad de respuesta ante quiebra de solo el patrimonio invertido por él.</span></li><li><strong><span>Sociedad Colectiva Comercial:</span></strong><span> En este tipo de sociedad los socios intervienen en la gestión y responden personal e ilimitadamente por las deudas de la sociedad, es decir, responden incluso con sus bienes personales.</span></li><li><strong><span>Sociedad en Comandita:</span></strong><span> Esta sociedad está formada por dos tipos de socios: comanditarios y gestores. Los primeros solo aportan capital y responden solo por lo ello, mientras el socio gestor administra la sociedad y responde ilimitadamente.</span></li></ol><p><span>Cabe destacar que, las dos últimas mencionadas, no son muy utilizadas en nuestro país, ya que ponen en riesgo el patrimonio personal de los socios.</span></p><p><span>Además, existen empresas mercantiles y no mercantiles.</span></p><ol start='' ><li><strong><span>Mercantiles:</span></strong><span> Son empresas con ánimo de lucro. Ejemplo: empresas de retail, constructoras, productoras, etc.</span></li><li><strong><span>No Mercantiles:</span></strong><span> Son empresas sin ánimos de lucro. Ejemplo: Fundaciones, asociaciones, etc.</span></li></ol><p><span>  </span></p><h1><a name="conclusión" class="md-header-anchor"></a><span>Conclusión </span></h1><p><span>En conclusión, la empresa posee un montón de regulaciones, procesos, exigencias, funciones que debe cumplir, políticas, por las que se debe regir, todo esto, para poder obtener las metas u objetivos impuestos por sí mismos, los cuales se irán alcanzando gradualmente, con un buen manejo de los recursos disponibles, en mano de la organización que esta siga, sean materiales como recursos humanos, que, dentro de todo, son quienes ayudan a lograr los objetivos que tiene la empresa como tal, el desarrollo de esta y el posterior éxito al que se aspira llegar.</span></p><h1><a name="linkografía" class="md-header-anchor"></a><span>Linkografía</span></h1><ul><li><a href='http://www.derecho-chile.cl/pasos-para-crear-una-empresa-en-chile/' target='_blank' class='url'>http://www.derecho-chile.cl/pasos-para-crear-una-empresa-en-chile/</a></li><li><a href='https://www.emprende.cl/tipos-de-sociedades-en-chile/' target='_blank' class='url'>https://www.emprende.cl/tipos-de-sociedades-en-chile/</a></li><li><a href='https://iniciatupyme.cl/constitucion-de-sociedades/' target='_blank' class='url'>https://iniciatupyme.cl/constitucion-de-sociedades/</a></li><li><a href='http://www.sii.cl/mipyme/emprendedor/documentos/fac_Tramites_1.htm' target='_blank' class='url'>http://www.sii.cl/mipyme/emprendedor/documentos/fac_Tramites_1.htm</a></li><li><a href='https://es.wikipedia.org/wiki/Empresa' target='_blank' class='url'>https://es.wikipedia.org/wiki/Empresa</a></li><li><a href='http://www.ddegjust.ac.in/studymaterial/bba/bba-201.pdf' target='_blank' class='url'>http://www.ddegjust.ac.in/studymaterial/bba/bba-201.pdf</a></li><li><a href='https://www.edebe.com/educacion/documentos/830343-0-529-830343_LA_EIE_CAS.pdf' target='_blank' class='url'>https://www.edebe.com/educacion/documentos/830343-0-529-830343_LA_EIE_CAS.pdf</a></li></ul><p><span>—-</span></p><ol start='' ><li><span>llevar a cabo una idea</span></li><li><span>Accionistas de una empresa</span></li><li><span>Gerente </span></li><li><span>Sociedad anónima:</span>
+<span>Cemento melón SA </span>
+<span>El gerente es nombra por la junta de accionistas </span>
+<span>4.1 Junta de vigilancia:</span>
+<span>4.2 cotización en bolsa</span>
+<span>La denominación de anónimo es que no importa cuanta sean las personas, sino que las accciones </span>
+<span>Sociedad</span></li><li><span>llevar a cabo una idea</span></li><li><span>Accionistas de una empresa</span></li><li><span>Gerente </span></li><li><span>Sociedad anónima:</span>
+<span>Cemento melón SA </span>
+<span>El gerente es nombra por la junta de accionistas </span>
+<span>4.1 Junta de vigilancia:</span>
+<span>Encargado de vigilar que las acciones se den a cabo</span>
+<span>Sociedades de responsabilidad limitada</span>
+<span>Cada uno 33,33%</span>
+<span>Los estatutos de la empresa </span></li></ol><p>&nbsp;</p></div>
+</body>
+</html>
