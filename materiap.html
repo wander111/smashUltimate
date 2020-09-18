@@ -2,7 +2,7 @@
 <html style='font-size:18px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>materiap</title><link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:300,300i,400,400i,700,700i&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>materiap</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
@@ -159,150 +159,75 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 }
 
 
-@include-when-export url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:300,300i,400,400i,700,700i&subset=latin-ext');
-
 :root {
-  --accent-color: #aeb1b5;
-  --dark-accent-color: #787a7c; /* #'s before H1-3 */
-  --background-color: white;
-  --border-color: #ddd; 
-  --code-bg-color: #f8f8f8; 
-  --font-color: #42464c;
-  --header-color: #222324;
-  --link-color: #2077b2;
-  --control-text-color: #667176;
-  --side-bar-bg-color: #fafafa;
-  --body-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace;
-  --header-font: "Fira Sans", "Roboto", "Source Sans Pro", sans-serif;
-  --border-radius: 2px;
-  --document-horizontal-margin: 200px;
-  --document-padding-x: 10ch;
-  --font-size: 16px;
-  --h1-fontsize: 2rem;   /* 1,5   rem = 24px */
-  --h2-fontsize: 1.375rem; /* 1,375 rem = 22px */
-  --h3-fontsize: 1.25rem;  /* 1,25  rem = 20px */
-  --h4-fontsize: 1.125rem; /* 1,125 rem = 18px */
-  --line-height: 1.4;
-  --main-content-margin: 0 auto;
-  --main-content-max-width: 120ch;
-  --monospace-font-size: 15px;
-  --monospace-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace;
-  --monospace-line-height: 1.4;
-  --monospace: var(--monospace-font); /* Fixes source code mode */
-  --nav-width: 200px;
-  --vertical-padding: 40px;
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
 }
 
-/* Narrow layout styles */
-@media (max-width: 640px) {
-  :root {
-    --document-padding-x: 4ch;
-  }
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
 }
 
-html {
-  font-size: var(--font-size);
-  background-color: var(--background-color);
-}
-
-html,
 body {
-  color: var(--font-color);
-  font-family: var(--body-font);
-  line-height: var(--line-height);
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
 
 #write {
-	/* size of writing area: */
-  padding-left: var(--document-padding-x);
-  padding-right: var(--document-padding-x);
-  max-width: var(--main-content-max-width);
-  box-sizing: border-box;
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
 }
 
-/**
- * ---------------------
- * Block Elements
- */
-
-/* yaml */
-pre.md-meta-block {
-  background-color: var(--background-color);
-  padding-bottom: .5rem;
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--border-color);
-  font-family: var(--monospace-font);
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
 }
 
-/* headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font);
-  font-weight: bold;
-  color: var(--header-color);  
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
-h1 {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: var(--h1-fontsize);
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
 
-h1:not(:first-child) {
-  margin-top: 3rem;
+a {
+    color: #4183C4;
 }
-
-h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-size: var(--h2-fontsize);
-}
-
-h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: var(--h3-fontsize);
-}
-
-h4, h5, h6 {
-  color: var(--header-color);  
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  font-size: 1rem;
-}
-
-h4 {
-  font-size: var(--h4-fontsize);
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  color: var(--control-text-color);	
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
 }
-
-/*  We do not need this crap. This will be removed eventually
-h1::before,
-h2::before,
-h3::before {
-  font-weight: 400;
-  text-align: right;
-  width: 5ch;
-  padding-right: 1ch;
-  margin-left: -5ch;
-  color: var(--dark-accent-color);
-  display: inline-block;
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
 }
-
-h1::before {
-  content: '#';
-}
-
-h2::before {
-  content: '##';
-}
-
-h3::before {
-  content: '###';
-} */
-
 h1 tt,
 h1 code {
     font-size: inherit;
@@ -327,160 +252,298 @@ h6 tt,
 h6 code {
     font-size: inherit;
 }
-
-/* table */
-table {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
 }
 
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
 table tr:nth-child(2n),
 thead {
-    background-color: var(--side-bar-bg-color);
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
 }
 
-td,
-th {
-  border-style: solid;
-  border-color: var(--border-color);
-  border-width: 1px;
-  padding: .35rem .7rem
-}
-
-li p {
-  margin: 0;
-}
-
-.task-list {
-  padding-left: 0;
-}
-
-.task-list-item {
-  padding-left: 1.5em;
-  margin-bottom: 0rem;
-}
-
-#write input[type='checkbox'] {
-  margin-top: 5px;
-}
-
-blockquote {
-  margin: 1rem 0;
-  padding-left: 2ch;
-  margin-left: .5ch;
-  position: relative;
-  overflow: hidden;
-  border-left: 2px solid var(--border-color);
-  color: var(--accent-color);
-}
-
-/* horizontal line */
-hr {
-  border: none;
-  border-bottom: 2px solid var(--border-color);
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
-}
-
-p {
-  margin: 1rem 0;
-}
-
-/**
- * Code Fences
- * see http:/*support.typora.io/Code-Block-Styles
- */
-
-.cm-s-inner .CodeMirror-gutters {
-   background: var(--code-bg-color);
+.CodeMirror-lines {
+    padding-left: 4px;
 }
 
 .code-tooltip {
-  box-shadow: none;
-  border-radius: var(--border-radius);
-  background-color: var(--code-bg-color);
-  border-color: var(--border-color);
-  border-style: solid;
-  border-width: 1px;
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
 }
-
-.code-tooltip input {
-  outline: none;
-  width: 20ch;
-}
-
-.md-fences .code-tooltip {
-  bottom: -1.8rem;
-  padding: none;
-}
-
-.md-fences.md-focus .cm-s-inner {
-  /* Remove bottom right border radius when tooltip is shown */
-  border-bottom-right-radius: 0;
-}
-
-/* code tooltip autocomplete list */
-
-.autoComplt-hint {
-  background-color: transparent !important;
-  margin: 0 !important;
-  padding: 0.125rem 0.375rem !important;
-  color: var(--text-color) !important;
-  line-height: var(--line-height) !important;
-  height: 1.4rem !important;
-}
-
-.autoComplt-hint-selected {
-  background-color: var(--link-color) !important;
-  color: var(--background-color) !important;
-}
-
-/* basic styles */
 
 .md-fences,
 code,
 tt {
-  border: 1px solid var(--border-color);
-  background-color: var(--code-bg-color);
-  font-family: var(--monospace-font);
-  font-size: var(--monospace-font-size);
-  border-radius: .25rem;
-  padding: 0 .125rem;
-  line-height: var(--monospace-line-height);
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
 .md-fences {
-  margin-bottom: 18px;
-  margin-top: 15px;
-  padding: 0.2em 1em;
-  padding-top: 8px;
-  padding-bottom: 6px;
-}
-
-a {
-  color:  var(--link-color);
-  text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
 
-/**
- * Control UI (optional)
- */
-
-.outline-item:hover {
-  color: var(--header-color);
+.md-task-list-item > input {
+  margin-left: -1.3em;
 }
 
-#write div.md-toc-tooltip {
-	background-color: var(--background-color);
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
 }
 
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
 
 
 </style>
 </head>
 <body class='typora-export'>
-<div id='write'  class=''><h1><a name="materia" class="md-header-anchor"></a><span>materia</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" style="" href="#materia">materia</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n3"><a class="md-toc-inner" style="" href="#mapa-conceptual-asignatura">Mapa conceptual asignatura</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n5"><a class="md-toc-inner" style="" href="#glosario">Glosario</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n19"><a class="md-toc-inner" style="" href="#teoria-general-de-sistemas">Teoria general de sistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n20"><a class="md-toc-inner" style="" href="#introduccion">Introduccion</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n30"><a class="md-toc-inner" style="" href="#clasificacion-de-los-sistemas">Clasificacion de los sistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n47"><a class="md-toc-inner" style="" href="#sinergia">Sinergia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n58"><a class="md-toc-inner" style="" href="#recursividad">Recursividad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n66"><a class="md-toc-inner" style="" href="#entropia">Entropia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n101"><a class="md-toc-inner" style="" href="#negentropia">Negentropia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n110"><a class="md-toc-inner" style="" href="#homeostasis">Homeostasis</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n122"><a class="md-toc-inner" style="" href="#sistemas-y-subsistemas">Sistemas y subsistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n123"><a class="md-toc-inner" style="" href="#sistema">Sistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n148"><a class="md-toc-inner" style="" href="#subsistema">Subsistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n161"><a class="md-toc-inner" style="" href="#elementos-de-un-sistema">Elementos de un sistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n180"><a class="md-toc-inner" style="" href="#organizacion-como-sistema-abierto">Organizacion como sistema abierto</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n188"><a class="md-toc-inner" style="" href="#sistema-organizacional">Sistema organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n202"><a class="md-toc-inner" style="" href="#niveles-organizacionales">Niveles organizacionales</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n204"><a class="md-toc-inner" style="" href="#estructura-organizacional">Estructura organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n210"><a class="md-toc-inner" style="" href="#caracteristicas-de-las-complejidades-del-sistema-organizacional">Caracteristicas de las complejidades del sistema organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n224"><a class="md-toc-inner" style="" href="#sistema-administrativo-en-las-operaciones">Sistema administrativo en las operaciones</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n227"><a class="md-toc-inner" style="" href="#proceso-administratico">Proceso administratico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n259"><a class="md-toc-inner" style="" href="#concepto-de-sistemas-y-planeamiento-estrategico">Concepto de Sistemas y Planeamiento Estrategico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n268"><a class="md-toc-inner" style="" href="#planeamiento-estrategico---diagnostico">Planeamiento estrategico - diagnostico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n277"><a class="md-toc-inner" style="" href="#cadena-de-valor">Cadena de valor</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n280"><a class="md-toc-inner" style="" href="#sistema-de-produccion-de-bienes-y-servicios">Sistema de produccion de bienes y servicios</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n281"><a class="md-toc-inner" style="" href="#sectores-economicos-y-clasificacion">Sectores economicos y clasificacion</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n338"><a class="md-toc-inner" style="" href="#clasificacion-internacional-industrial-uniforme-ciiu">Clasificacion internacional industrial uniforme (CIIU)</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n386"><a class="md-toc-inner" style="" href="#conceptualizacion-del-efonque-de-procesos">Conceptualizacion del efonque de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n387"><a class="md-toc-inner" style="" href="#concepto-de-proceso">Concepto de proceso</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n395"><a class="md-toc-inner" style="" href="#conceptos-para-comprender-los-procesos">Conceptos para comprender los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n411"><a class="md-toc-inner" style="" href="#gestion-por-procesos-1">Gestion por procesos (1)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n418"><a class="md-toc-inner" style="" href="#mayor-productividad">Mayor productividad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n434"><a class="md-toc-inner" style="" href="#gestion-de-procesos">Gestion de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n456"><a class="md-toc-inner" style="" href="#gestion-por-procesos-2">Gestion por procesos (2)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n463"><a class="md-toc-inner" style="" href="#enfoque-de-procesos">Enfoque de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n477"><a class="md-toc-inner" style="" href="#red-de-procesos">Red de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n479"><a class="md-toc-inner" style="" href="#concepto-de-calidad">Concepto de calidad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n491"><a class="md-toc-inner" style="" href="#gestion-de-calidad">Gestion de calidad</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n492"><a class="md-toc-inner" style="" href="#concepto-de-gestión-de-la-calidad">Concepto de Gestión de la Calidad</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n500"><a class="md-toc-inner" style="" href="#principios-de-gestión-de-la-calidad">Principios de Gestión de la Calidad</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n516"><a class="md-toc-inner" style="" href="#identificación-y-clasificación-de-los-procesos">Identificación y clasificación de los Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n517"><a class="md-toc-inner" style="" href="#clasificación-de-los-procesos">Clasificación de los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n525"><a class="md-toc-inner" style="" href="#identificación-de-los-procesos">Identificación de los Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n571"><a class="md-toc-inner" style="" href="#ficha-de-descripción-de-procesos">Ficha de descripción de Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n580"><a class="md-toc-inner" style="" href="#segmentacion-de-los-procesos">Segmentacion de los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n581"><a class="md-toc-inner" style="" href="#por-cadena">Por cadena</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n585"><a class="md-toc-inner" style="" href="#jerarquías-de-procesos">Jerarquías de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n588"><a class="md-toc-inner" style="" href="#versiones-de-procesos">Versiones de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n603"><a class="md-toc-inner" style="" href="#modelamiento-visual-de-procesos">Modelamiento visual de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n620"><a class="md-toc-inner" style="" href="#mapa-de-procesos">Mapa de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n622"><a class="md-toc-inner" style="" href="#pasos-para-elavorar-un-mapa-de-procesos">Pasos para elavorar un mapa de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n670"><a class="md-toc-inner" style="" href="#tipos-de-diagrama-de-flujo">Tipos de Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n671"><a class="md-toc-inner" style="" href="#diagrama-de-flujo-vertical">Diagrama de flujo vertical</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n674"><a class="md-toc-inner" style="" href="#diagrama-de-flujo-horizontal">Diagrama de flujo horizontal</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n678"><a class="md-toc-inner" style="" href="#diagrama-de-flujo-de-bloques">Diagrama de flujo de bloques</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n681"><a class="md-toc-inner" style="" href="#beneficios-del-diagrama-de-flujo">Beneficios del Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n703"><a class="md-toc-inner" style="" href="#componentes-fi">Componentes (FI)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n714"><a class="md-toc-inner" style="" href="#características-del-diagrama-de-flujo">Características del Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n731"><a class="md-toc-inner" style="" href="#bpn">BPN</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n734"><a class="md-toc-inner" style="" href="#indicadores">Indicadores</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n762"><a class="md-toc-inner" style="" href="#tipos-de-indicadores">Tipos de Indicadores</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n763"><a class="md-toc-inner" style="" href="#calidad-del-producto-y-el-proceso">Calidad del producto y el proceso</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n785"><a class="md-toc-inner" style="" href="#servicio-al-cliente">Servicio al cliente</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n800"><a class="md-toc-inner" style="" href="#costos-del-proceso">Costos del proceso</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n811"><a class="md-toc-inner" style="" href="#tiempos-del-proceso-por-transacción">Tiempos del proceso por transacción</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n820"><a class="md-toc-inner" style="" href="#kpi">KPI</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n823"><a class="md-toc-inner" style="" href="#proposito">Proposito</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n835"><a class="md-toc-inner" style="" href="#identificación">Identificación</a></span></p></div><h1><a name="mapa-conceptual-asignatura" class="md-header-anchor"></a><span>Mapa conceptual asignatura</span></h1><p><img src="materiap_files/image-20200512181642190.png" referrerpolicy="no-referrer" alt="image-20200512181642190"></p><h1><a name="glosario" class="md-header-anchor"></a><span>Glosario</span></h1><ol start='' ><li><strong><span>TGS</span></strong><span>: teoría general de Sistemas</span></li><li><strong><span>SGC</span></strong><span>: Sistema de gestión de la Calidad</span></li><li><strong><span>JIT</span></strong><span>: Estilo sistémico muy utilizado en Japón, la simple traducción “justo a tiempo” no refleja toda la riqueza del concepto, es más que tener las existencias a la vista o disponer de las partes de un producto antes de emplearlas en la línea de producción, significa cultivar una relación basada en confianza, de interdependencia.</span></li><li><strong><span>KANBAN</span></strong><span>: Modelo donde, manteniendo una estructura semiespecializada del proceso, se procesa de a una pieza a la vez en cada eslabón de la línea. Si hay una falla, todas las personas en la cadena se detienen y ayudan a corregir el problema.</span></li><li><strong><span>Lean Manufacturing</span></strong><span>: Modelo de gestión basado en tres pilares fundamentales: aportar valor al cliente, reducir el despilfarro y trabajar con procesos flexibles.</span></li><li><strong><span>BPM</span></strong><span>: (Business process management) La Gestión de Procesos de Negocio es una disciplina de gestión compuesta de metodologías y tecnologías, cuyo objetivo es mejorar el desempeño y la optimización de los procesos de una organización.</span></li></ol><h1><a name="teoria-general-de-sistemas" class="md-header-anchor"></a><span>Teoria general de sistemas</span></h1><h2><a name="introduccion" class="md-header-anchor"></a><span>Introduccion</span></h2><blockquote><p><span>Es el estudio interdisciplinario de los sistemas, en general, con el propósito de dilucidar los principios que pueden ser aplicados a todo tipo de sistemas en todos los niveles anidados en todos los campos de la investigación. Ludwig Von Bertalaffy</span></p></blockquote><p><img src="materiap_files/image-20200513181511066.png" referrerpolicy="no-referrer" alt="image-20200513181511066"></p><hr /><p><span>La Teoría General de Sistemas describe un nivel de construcción teórico de modelos que se sitúa entre las construcciones altamente generalizadas, de las matemáticas puras y las teorías específicas de las disciplinas especializadas y que en los últimos años ha hecho sentir con fuerza la necesidad de un cuerpo sistemático de construcciones teóricas que pueda discutir, analizar y explicar las relaciones generales del mundo empírico. </span><strong><span>No se busca establecer una teoría general única y total</span></strong><span>.</span></p><p><img src="materiap_files/image-20200513181626712.png" alt="image-20200513181626712" style="zoom:50%;" /></p><hr /><p><span>Mientras más se divide la ciencia en sub grupos y menor sea la comunicación entre las disciplinas, mayor es la probabilidad de que el crecimiento total del conocimiento sea reducido por la pérdida de comunicación relevante .</span></p><p><img src="materiap_files/image-20200513181658230.png" referrerpolicy="no-referrer" alt="image-20200513181658230"></p><h2><a name="clasificacion-de-los-sistemas" class="md-header-anchor"></a><span>Clasificacion de los sistemas</span></h2><ul><li><strong><span>Sistemas Naturales</span></strong><span>: Aquellos sistemas que han sido elaborados por la naturaleza, desde el nivel de estructuras atómicas hasta los sistemas vivos, los sistemas solares y el universo.</span></li><li><strong><span>Sistemas Diseñados</span></strong><span>: Aquellos diseñados por el hombre y son parte del mundo real. Pueden ser de dos tipos: Abstractos y Concretos</span></li></ul><p><img src="materiap_files/image-20200513181721100.png" referrerpolicy="no-referrer" alt="image-20200513181721100"></p><p><img src="materiap_files/image-20200513181730604.png" alt="image-20200513181730604" style="zoom:67%;" /></p><hr /><ul><li><strong><span>Sistemas de Actividad Humana</span></strong><span>: Son sistemas que describen al ser humano a través de lo que hace. Se basan en la apreciación de lo que en el mundo real una persona o grupos de personas podrían estar haciendo. (Hombre –maquina).</span></li></ul><p><img src="materiap_files/image-20200513181804880.png" referrerpolicy="no-referrer" alt="image-20200513181804880"></p><ul><li><strong><span>Sistemas Culturales</span></strong><span>: Sistemas formados por la agrupación de personas, podría hablarse de la empresa, la familia, el grupo de estudio de la universidad, etc.</span></li></ul><h2><a name="sinergia" class="md-header-anchor"></a><span>Sinergia</span></h2><p><span>Cuando la suma de las partes es diferente del todo; cuando un objeto cumple con este principio o requisito decimos que posee o existe sinergia.</span>
+<div id='write'  class=''><h1><a name="materia" class="md-header-anchor"></a><span>materia</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#materia">materia</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n3"><a class="md-toc-inner" href="#mapa-conceptual-asignatura">Mapa conceptual asignatura</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n5"><a class="md-toc-inner" href="#glosario">Glosario</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n19"><a class="md-toc-inner" href="#teoria-general-de-sistemas">Teoria general de sistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n20"><a class="md-toc-inner" href="#introduccion">Introduccion</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n30"><a class="md-toc-inner" href="#clasificacion-de-los-sistemas">Clasificacion de los sistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n47"><a class="md-toc-inner" href="#sinergia">Sinergia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n58"><a class="md-toc-inner" href="#recursividad">Recursividad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n66"><a class="md-toc-inner" href="#entropia">Entropia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n101"><a class="md-toc-inner" href="#negentropia">Negentropia</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n110"><a class="md-toc-inner" href="#homeostasis">Homeostasis</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n122"><a class="md-toc-inner" href="#sistemas-y-subsistemas">Sistemas y subsistemas</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n123"><a class="md-toc-inner" href="#sistema">Sistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n148"><a class="md-toc-inner" href="#subsistema">Subsistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n161"><a class="md-toc-inner" href="#elementos-de-un-sistema">Elementos de un sistema</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n180"><a class="md-toc-inner" href="#organizacion-como-sistema-abierto">Organizacion como sistema abierto</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n188"><a class="md-toc-inner" href="#sistema-organizacional">Sistema organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n202"><a class="md-toc-inner" href="#niveles-organizacionales">Niveles organizacionales</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n204"><a class="md-toc-inner" href="#estructura-organizacional">Estructura organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n210"><a class="md-toc-inner" href="#caracteristicas-de-las-complejidades-del-sistema-organizacional">Caracteristicas de las complejidades del sistema organizacional</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n224"><a class="md-toc-inner" href="#sistema-administrativo-en-las-operaciones">Sistema administrativo en las operaciones</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n227"><a class="md-toc-inner" href="#proceso-administratico">Proceso administratico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n259"><a class="md-toc-inner" href="#concepto-de-sistemas-y-planeamiento-estrategico">Concepto de Sistemas y Planeamiento Estrategico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n268"><a class="md-toc-inner" href="#planeamiento-estrategico---diagnostico">Planeamiento estrategico - diagnostico</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n277"><a class="md-toc-inner" href="#cadena-de-valor">Cadena de valor</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n280"><a class="md-toc-inner" href="#sistema-de-produccion-de-bienes-y-servicios">Sistema de produccion de bienes y servicios</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n281"><a class="md-toc-inner" href="#sectores-economicos-y-clasificacion">Sectores economicos y clasificacion</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n338"><a class="md-toc-inner" href="#clasificacion-internacional-industrial-uniforme-ciiu">Clasificacion internacional industrial uniforme (CIIU)</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n386"><a class="md-toc-inner" href="#conceptualizacion-del-efonque-de-procesos">Conceptualizacion del efonque de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n387"><a class="md-toc-inner" href="#concepto-de-proceso">Concepto de proceso</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n395"><a class="md-toc-inner" href="#conceptos-para-comprender-los-procesos">Conceptos para comprender los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n411"><a class="md-toc-inner" href="#gestion-por-procesos-1">Gestion por procesos (1)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n418"><a class="md-toc-inner" href="#mayor-productividad">Mayor productividad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n434"><a class="md-toc-inner" href="#gestion-de-procesos">Gestion de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n456"><a class="md-toc-inner" href="#gestion-por-procesos-2">Gestion por procesos (2)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n463"><a class="md-toc-inner" href="#enfoque-de-procesos">Enfoque de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n477"><a class="md-toc-inner" href="#red-de-procesos">Red de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n479"><a class="md-toc-inner" href="#concepto-de-calidad">Concepto de calidad</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n491"><a class="md-toc-inner" href="#gestion-de-calidad">Gestion de calidad</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n492"><a class="md-toc-inner" href="#concepto-de-gestión-de-la-calidad">Concepto de Gestión de la Calidad</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n500"><a class="md-toc-inner" href="#principios-de-gestión-de-la-calidad">Principios de Gestión de la Calidad</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n516"><a class="md-toc-inner" href="#identificación-y-clasificación-de-los-procesos">Identificación y clasificación de los Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n517"><a class="md-toc-inner" href="#clasificación-de-los-procesos">Clasificación de los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n525"><a class="md-toc-inner" href="#identificación-de-los-procesos">Identificación de los Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n571"><a class="md-toc-inner" href="#ficha-de-descripción-de-procesos">Ficha de descripción de Procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n580"><a class="md-toc-inner" href="#segmentacion-de-los-procesos">Segmentacion de los procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n581"><a class="md-toc-inner" href="#por-cadena">Por cadena</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n585"><a class="md-toc-inner" href="#jerarquías-de-procesos">Jerarquías de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n588"><a class="md-toc-inner" href="#versiones-de-procesos">Versiones de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n603"><a class="md-toc-inner" href="#modelamiento-visual-de-procesos">Modelamiento visual de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n620"><a class="md-toc-inner" href="#mapa-de-procesos">Mapa de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n622"><a class="md-toc-inner" href="#pasos-para-elavorar-un-mapa-de-procesos">Pasos para elavorar un mapa de procesos</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n670"><a class="md-toc-inner" href="#tipos-de-diagrama-de-flujo">Tipos de Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n671"><a class="md-toc-inner" href="#diagrama-de-flujo-vertical">Diagrama de flujo vertical</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n674"><a class="md-toc-inner" href="#diagrama-de-flujo-horizontal">Diagrama de flujo horizontal</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n678"><a class="md-toc-inner" href="#diagrama-de-flujo-de-bloques">Diagrama de flujo de bloques</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n681"><a class="md-toc-inner" href="#beneficios-del-diagrama-de-flujo">Beneficios del Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n703"><a class="md-toc-inner" href="#componentes-fi">Componentes (FI)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n714"><a class="md-toc-inner" href="#características-del-diagrama-de-flujo">Características del Diagrama de Flujo</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n731"><a class="md-toc-inner" href="#bpn">BPN</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n734"><a class="md-toc-inner" href="#indicadores">Indicadores</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n762"><a class="md-toc-inner" href="#tipos-de-indicadores">Tipos de Indicadores</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n763"><a class="md-toc-inner" href="#calidad-del-producto-y-el-proceso">Calidad del producto y el proceso</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n785"><a class="md-toc-inner" href="#servicio-al-cliente">Servicio al cliente</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n800"><a class="md-toc-inner" href="#costos-del-proceso">Costos del proceso</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n811"><a class="md-toc-inner" href="#tiempos-del-proceso-por-transacción">Tiempos del proceso por transacción</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n820"><a class="md-toc-inner" href="#kpi">KPI</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n823"><a class="md-toc-inner" href="#proposito">Proposito</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n835"><a class="md-toc-inner" href="#identificación">Identificación</a></span></p></div><h1><a name="mapa-conceptual-asignatura" class="md-header-anchor"></a><span>Mapa conceptual asignatura</span></h1><p><img src="materiap_files/image-20200512181642190.png" referrerpolicy="no-referrer" alt="image-20200512181642190"></p><h1><a name="glosario" class="md-header-anchor"></a><span>Glosario</span></h1><ol start='' ><li><strong><span>TGS</span></strong><span>: teoría general de Sistemas</span></li><li><strong><span>SGC</span></strong><span>: Sistema de gestión de la Calidad</span></li><li><strong><span>JIT</span></strong><span>: Estilo sistémico muy utilizado en Japón, la simple traducción “justo a tiempo” no refleja toda la riqueza del concepto, es más que tener las existencias a la vista o disponer de las partes de un producto antes de emplearlas en la línea de producción, significa cultivar una relación basada en confianza, de interdependencia.</span></li><li><strong><span>KANBAN</span></strong><span>: Modelo donde, manteniendo una estructura semiespecializada del proceso, se procesa de a una pieza a la vez en cada eslabón de la línea. Si hay una falla, todas las personas en la cadena se detienen y ayudan a corregir el problema.</span></li><li><strong><span>Lean Manufacturing</span></strong><span>: Modelo de gestión basado en tres pilares fundamentales: aportar valor al cliente, reducir el despilfarro y trabajar con procesos flexibles.</span></li><li><strong><span>BPM</span></strong><span>: (Business process management) La Gestión de Procesos de Negocio es una disciplina de gestión compuesta de metodologías y tecnologías, cuyo objetivo es mejorar el desempeño y la optimización de los procesos de una organización.</span></li></ol><h1><a name="teoria-general-de-sistemas" class="md-header-anchor"></a><span>Teoria general de sistemas</span></h1><h2><a name="introduccion" class="md-header-anchor"></a><span>Introduccion</span></h2><blockquote><p><span>Es el estudio interdisciplinario de los sistemas, en general, con el propósito de dilucidar los principios que pueden ser aplicados a todo tipo de sistemas en todos los niveles anidados en todos los campos de la investigación. Ludwig Von Bertalaffy</span></p></blockquote><p><img src="materiap_files/image-20200513181511066.png" referrerpolicy="no-referrer" alt="image-20200513181511066"></p><hr /><p><span>La Teoría General de Sistemas describe un nivel de construcción teórico de modelos que se sitúa entre las construcciones altamente generalizadas, de las matemáticas puras y las teorías específicas de las disciplinas especializadas y que en los últimos años ha hecho sentir con fuerza la necesidad de un cuerpo sistemático de construcciones teóricas que pueda discutir, analizar y explicar las relaciones generales del mundo empírico. </span><strong><span>No se busca establecer una teoría general única y total</span></strong><span>.</span></p><p><img src="materiap_files/image-20200513181626712.png" alt="image-20200513181626712" style="zoom:50%;" /></p><hr /><p><span>Mientras más se divide la ciencia en sub grupos y menor sea la comunicación entre las disciplinas, mayor es la probabilidad de que el crecimiento total del conocimiento sea reducido por la pérdida de comunicación relevante .</span></p><p><img src="materiap_files/image-20200513181658230.png" referrerpolicy="no-referrer" alt="image-20200513181658230"></p><h2><a name="clasificacion-de-los-sistemas" class="md-header-anchor"></a><span>Clasificacion de los sistemas</span></h2><ul><li><strong><span>Sistemas Naturales</span></strong><span>: Aquellos sistemas que han sido elaborados por la naturaleza, desde el nivel de estructuras atómicas hasta los sistemas vivos, los sistemas solares y el universo.</span></li><li><strong><span>Sistemas Diseñados</span></strong><span>: Aquellos diseñados por el hombre y son parte del mundo real. Pueden ser de dos tipos: Abstractos y Concretos</span></li></ul><p><img src="materiap_files/image-20200513181721100.png" referrerpolicy="no-referrer" alt="image-20200513181721100"></p><p><img src="materiap_files/image-20200513181730604.png" alt="image-20200513181730604" style="zoom:67%;" /></p><hr /><ul><li><strong><span>Sistemas de Actividad Humana</span></strong><span>: Son sistemas que describen al ser humano a través de lo que hace. Se basan en la apreciación de lo que en el mundo real una persona o grupos de personas podrían estar haciendo. (Hombre –maquina).</span></li></ul><p><img src="materiap_files/image-20200513181804880.png" referrerpolicy="no-referrer" alt="image-20200513181804880"></p><ul><li><strong><span>Sistemas Culturales</span></strong><span>: Sistemas formados por la agrupación de personas, podría hablarse de la empresa, la familia, el grupo de estudio de la universidad, etc.</span></li></ul><h2><a name="sinergia" class="md-header-anchor"></a><span>Sinergia</span></h2><p><span>Cuando la suma de las partes es diferente del todo; cuando un objeto cumple con este principio o requisito decimos que posee o existe sinergia.</span>
 <span>Un objeto posee sinergia cuando el examen de una o alguna de sus partes (incluso a cada una de sus partes) en forma aislada, no puede explicar o predecir la conducta del todo.</span></p><p><img src="materiap_files/image-20200513181855999.png" alt="image-20200513181855999" style="zoom:33%;" /></p><p><img src="materiap_files/image-20200513181911847.png" referrerpolicy="no-referrer" alt="image-20200513181911847"></p><p><img src="materiap_files/image-20200513181928157.png" alt="image-20200513181928157" style="zoom:67%;" /></p><blockquote><p><span>La empresa es una totalidad con sinergia. Peter F. Drucker (Liderazgo, emprendimiento, sociedad del conocimiento)</span></p></blockquote><p><img src="materiap_files/image-20200513182010400.png" referrerpolicy="no-referrer" alt="image-20200513182010400"></p><p><span>Sin mencionar el término sinergia lo describe:</span></p><blockquote><p><span>&quot;La empresa debe ser capaz, por definición, de producir más o mejor que todos los recursos que comprende. Debe ser un verdadero todo: mayor que la suma de sus partes, o, por lo menos, diferente a ella , con un rendimiento mayor que la suma de todos los consumos&quot;.</span></p></blockquote><h2><a name="recursividad" class="md-header-anchor"></a><span>Recursividad</span></h2><p><span>El hecho de que un objeto sinergético, un sistema, esté compuesto de partes con características tales que son a su vez objetos sinergéticos (sistemas). Hablamos entonces de sistemas y subsistemas. O, si queremos ser más extensos, de súper sistemas, sistemas y subsistemas. Lo esencial es que cada uno de estos objetos, no importando su tamaño, tiene propiedades que lo convierten en una totalidad, es decir, en elemento independiente .</span></p><p><img src="materiap_files/image-20200513182027861.png" referrerpolicy="no-referrer" alt="image-20200513182027861"></p><hr /><p><span>Esto no significa que todos los elementos de una totalidad sean totalidades a su vez. Si tenemos un conjunto de elementos tales como una célula, un hombre, un grupo humano y una empresa, es probable que, a primera vista, no observemos entre ellos ninguna relación. Sin embargo, un rápido análisis nos puede llevar a la conclusión de que sí existen relaciones. El hombre es un conjunto de células y el grupo es un conjunto de hombres . Luego podemos establecer aquí una recursividad célula-hombre-grupo</span></p><hr /><p><span>De todo esto se desprende que el concepto de recursividad se aplica a sistemas dentro de sistemas mayores, y a ciertas características particulares, más bien funciones o conductas propias de cada sistema, que son semejantes a la de los sistemas mayores.</span></p><p><span>Ejemplo: Empresa (Aspectos Dirección y Producción)</span></p><h2><a name="entropia" class="md-header-anchor"></a><span>Entropia</span></h2><p><span>En general, todo sistema diseñado para alcanzar un objetivo requiere de energía que recibe a través de la corriente de entrada (alimentos, vapor, electricidad, materias primas u otras fuentes). Esta energía dentro del sistema puede convertirse en </span><strong><span>energía cinética o potencial</span></strong><span>. La primera, se encuentra relacionada con la velocidad de un cuerpo, aunque algo de ella se pierde por la fricción de éste con el medio. (caminar, empujar un cuerpo ,transportar un objeto, etc.).</span></p><p><img src="materiap_files/image-20200513182044076.png" referrerpolicy="no-referrer" alt="image-20200513182044076"></p><hr /><p><span>La energía potencial se encuentra relacionada con la masa del cuerpo y los cambios de altura. Esta es la energía contenida en una cascada, la que se manifiesta cuando levantamos algún objeto, cuando subimos un cerro , etc.</span></p><p><span>Normalmente , al realizar un trabajo , el sistema desarrolla ambas formas de energía. Por ejemplo , si empujamos un objeto sobre un plano inclinado, la presión que realizamos se divide parte en energía cinética (el movimiento de translación) y parte de energía potencial (el movimiento de elevación), y por supuesto , pérdidas friccionales por el roce</span></p><hr /><p><span>Como todo proceso natural o humano, implica utilización o transformación de energía , los principios o leyes de la termodinámica se aplican tanto al acto de admirar una  escultura, diseñar una construcción, llevar a cabo una investigación, manejar una máquina u analizar el universo.</span></p><p><span>Cuando dos cuerpos que poseen la misma temperatura son colocados uno al lado de otro , sus temperaturas permanecen constantes (Ley cero). Entre uno y otro cuerpo no existe un flujo neto de energía calórica. Ambos cuerpos se encuentran en un equilibrio.</span></p><hr /><p><span>¿Qué sucede cuando los dos objetos no poseen la misma temperatura?</span></p><p><span>La respuesta a este problema la encontramos en la segunda ley de la termodinámica, que dice que existirá un flujo neto de energía y siempre desde el cuerpo más caliente al más frío . Si dejamos nuestra taza de café con su temperatura de 50° algún rato sobre la mesa, observaremos cuando lo tomemos, que se ha enfriado . La taza de café perdió temperatura debido a su exposición a un medio más frío.</span></p><hr /><p><span>Una mejor forma de expresar esta segunda ley de la termodinámica Se basa en la observación de que cuando ciertos estados del sistema son más probables que otros, </span><strong><span>el sistema siempre se moverá en la dirección del estado más probable.</span></strong></p><hr /><p><span>Si observáramos con los instrumentos apropiados, notaríamos que cuando el café estaba caliente, las moléculas  de agua chocaban violentamente de una manera caótica. Sin embargo, a pesar de este caos o movimiento al azar, existe un flujo neto de energía desde el café hacia el aire . Ya sea frío o caliente , la energía total contenida en la taza y en la pieza permanece constante. Es decir, podemos suponer que toda la energía calórica permanece en el cuarto.</span></p><hr /><p><span>Cuando el café se enfría, cesa de existir ese flujo neto de energía. Podemos decir que el sistema, ante la falta de un flujo neto de energía, está en una situación aún más caótica y al azar.</span></p><p><span>Del estado &quot;ordenado&quot; en el cual el café caliente es una situación organizada, con un &quot;propósito&quot;, el sistema ahora es reducido a un “desorden” molecular mayor.</span></p><hr /><p><strong><span>¿Qué es la entropía?</span></strong></p><p><span>Cantidad física mensurable tal como el largo de una cuerda , la temperatura de cualquier punto del cuerpo.</span></p><p><span>La entropía ejerce su acción en los sistemas aislados, es decir, aquellos que no &quot;comercian&quot; con su medio. Luego podemos afirmar concretamente que estos sistemas se encuentran condenados al caos y a la destrucción.</span></p><p><span>Los objetos físicos tienden a ser sistemas cerrados, y ésto, evidentemente, tienen una vida limitada.</span></p><p><img src="materiap_files/image-20200513182134322.png" alt="image-20200513182134322" style="zoom: 33%;" /></p><hr /><p><span>Todo esto es válido para los sistemas cerrados,</span></p><p><span>¿pero qué pasa con los sistemas abiertos o los sistemas vivos?</span></p><p><span>¿Cómo logra un organismo viviente evitar ese decaimiento que observábamos en los sistemas cerrados?</span></p><hr /><p><span>Podemos pensar que todos los sistemas se ven atacados  por la ley de la entropía, sin embargo , la simple observación del transcurso histórico de numerosos sistemas, parece contradecir este aspecto de la ley de la entropía siempre creciente. Por ejemplo, la Iglesia Católica, los países , las empresas industriales , la familia , etc. Esta contradicción o violación de la ley de la entropía es más aparente que real.  Si observamos los sistemas que &quot;violan&quot; la ley, podemos concluir que ellos poseen una importante característica en común.</span></p><p><strong><span>Todos son sistemas vivos y, más general aún , son todos sistemas abiertos.</span></strong></p><hr /><p><img src="materiap_files/image-20200512184700647.png" referrerpolicy="no-referrer" alt="image-20200512184700647"></p><p>&nbsp;</p><h2><a name="negentropia" class="md-header-anchor"></a><span>Negentropia</span></h2><p><span>La expresión &quot;entropía negativa&quot; (o neguentropía) es en sí una medida de orden. De este modo, el mecanismo mediante el cual el organismo se mantiene estacionario y a un nivel bastante alto de ordenamiento, realmente consiste en extraer continuamente orden (u organización) de su medio .</span>
 <span>Así, los sistemas abiertos al extraer orden del medio y reemplazar con él el desorden producido por sus procesos vitales, rompen la ley inexorable que ataca a los sistemas: la entropía creciente. Podemos, entonces, establecer claramente una nueva distinción entre sistema cerrado y sistema abierto .</span></p><hr /><p><img src="materiap_files/image-20200512184757243.png" referrerpolicy="no-referrer" alt="image-20200512184757243"></p><hr /><p><img src="materiap_files/image-20200512184821305.png" referrerpolicy="no-referrer" alt="image-20200512184821305"></p><hr /><p><span>Ejemplos practicos de negentropia:</span></p><p><img src="materiap_files/image-20200512185653248.png" referrerpolicy="no-referrer" alt="image-20200512185653248"></p><h2><a name="homeostasis" class="md-header-anchor"></a><span>Homeostasis</span></h2><p><span>Hace referencia al carácter adaptativo de los sistemas ante cualquier estimulo, cambio o influencia externa. La empresa no es un sistema puramente homeostático. No se adapta automáticamente a cualquier influencia.</span>
 <span>La organización puede alcanzar un estado solido, cuando se presenta los requisitos de:</span></p><p><strong><span>Unidireccionalidad</span></strong><span>: significa que a pesar de que hayan cambios en la empresa, los mismos resultados establecidos son alcanzados.</span></p><p><strong><span>Progreso</span></strong><span>: referido al fin deseado, es un grado de progreso que está dentro de los límites definidos como tolerables.</span></p><p><span>La unidireccionalidad y el progreso solo pueden ser alcanzados con liderazgo y compromiso.</span></p><p><span>La homeostasis es el rasgo de los sistemas autorregulados que consiste en mantener un estado de equilibrio dinámico, en el cual su composición y estructura se mantienen constantes dentro de ciertos límites.</span></p><hr /><p><span>Es la propiedad de un sistema que define su nivel de respuesta y de adaptación al contexto (Equilibrio Interno).</span></p><p><span>Ejemplos:</span></p><p><img src="materiap_files/image-20200512185522099.png" referrerpolicy="no-referrer" alt="image-20200512185522099"></p><hr /><p><img src="materiap_files/image-20200512185721338.png" referrerpolicy="no-referrer" alt="image-20200512185721338"></p><h1><a name="sistemas-y-subsistemas" class="md-header-anchor"></a><span>Sistemas y subsistemas</span></h1><h2><a name="sistema" class="md-header-anchor"></a><span>Sistema</span></h2><p><span>Ante la palabra &quot;sistemas&quot;, todos los que la han definido están de acuerdo en que es un conjunto de partes  coordinadas y en interacción para alcanzar un conjunto de objetivos.</span></p><p><span>Un sistema es un grupo de partes y objetos que interactúan y que forman un todo o que se encuentran bajo la influencia de fuerzas en alguna relación definida.</span></p><p><span>Definición más universal (General Systems Society for Research) que define a los sistemas como &quot;un conjunto de partes y sus interrelaciones“.</span></p><hr /><p><span>Un ejemplo lo constituye un grupo de trabajo, digamos un departamento de Investigación de una empresa.</span></p><p><span>Para los propietarios, este grupo es una unidad administrativa compuesto por un número determinado de personas, que se pueden dividir en jefes y subordinados, y cuyo número varía lentamente. El cuadro es radicalmente más complejo para quien está cerca de este departamento como para observar las acciones dinámicas y los cambios que tienen lugar.</span></p><hr /><p><span>Situaciones que parecen &quot;normales&quot; pueden ser relativamente superficiales cuando, por ejemplo, un superior pide algo a un subordinado (o viceversa). Esta acción supone cierta influencia de un personaje sobre el otro . Sin embargo, rara vez esta influencia es unidireccional, porque las reacciones del subordinado a su vez, actúan o reaccionan en el superior y, en general, en todo el sistema.</span></p><hr /><p><span>Los objetos son simplemente las partes de un sistema y estas partes pueden poseer una variedad limitada. En la mayoría de los sistemas, estas partes son físicas; por ejemplo, átomos, estrellas, masa, alambre, huesos, neuronas, músculos, gases, etc. , aunque también se incluyen objetos abstractos tales como variables matemáticas, ecuaciones, reglas y leyes, procesos, etc.</span>
